@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(196, 192, 192);
+  text-decoration: none;
+}
+@keyframes slide {
+  0% {
+    left: 950px;
+    font-size: 80px;
+  }
+  100% {
+    left: 980px;
+    font-size: 95px;
+  }
+}
+
+@keyframes slide-back {
+  0% {
+    left: 980px;
+    font-size: 95px;
+  }
+  100% {
+    left: 950px;
+    font-size: 80px;
+  }
+}
+body {
+  background: url("./images/image.png") no-repeat;
+  background-size: 100vw;
+}
+
+.wrapper {
+  position: static;
+  margin: 0;
+  width: 100vw;
+  height: 101vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+body div {
+  font-family: "Staatliches";
+  position: relative;
+  top: 35vh;
+  margin: -8px;
+  width: 600px;
+  height: 100px;
+  font-size: 80px;
+  color: rgb(196, 192, 192);
+  font-weight: 800;
+  animation: slide-back 0.5s ease-out forwards;
+}
+
+.about:hover {
+  animation: slide 0.5s ease-out forwards;
+}
+
+.projects:hover {
+  animation: slide 0.5s ease-out forwards;
+}
+.contact:hover {
+  animation: slide 0.5s ease-out forwards;
+}
+
+#about:hover {
+  color: #fff;
+}
+
+#projects:hover {
+  color: #fff;
+}
+
+#contact:hover {
+  color: #fff;
+}
