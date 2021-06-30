@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <script src="../js/jquery.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+    </style>
+    <title>Haiquan Patrick Zheng</title>
+  </head>
+  <body class="background">
+    <div class="wrapper">
+      <div class="home" id="home">
+        <a class="my-name" id="my-name" href="../index.html">Haiquan Patrick</a>
+      </div>
+      <div class="item"><a href="#">12345</a></div>
+      <div class="item"><a href="#">12345</a></div>
+      <div class="item"><a href="#">12345</a></div>
+      <div class="item"><a href="#">12345</a></div>
+      <div class="display">1</div>
+      <div class="display">2</div>
+      <div class="display">3</div>
+      <div class="display">4</div>
+    </div>
+    <script>
+      $(function () {
+        $(".display").hide();
+        $(".item").mouseover(function () {
+          let index = $(this).index() - 1;
+          console.log(index);
+          $(".display").eq(index).show();
+        });
+        $(".item").mouseout(function () {
+          let index = $(this).index() - 1;
+          $(".display").eq(index).hide();
+        });
+      });
+    </script>
+  </body>
+  <script src="../js/projects.js"></script>
+</html>

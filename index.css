@@ -39,9 +39,11 @@ body {
   width: 100vw;
   height: 101vh;
   background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.9)
+    130deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(0, 0, 0, 0.25) 45%,
+    rgba(0, 0, 0, 0.5) 65%,
+    rgba(0, 0, 0, 0.8) 98%
   );
 }
 body div {
