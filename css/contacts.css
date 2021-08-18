@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes slide-back {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(to right bottom, #366ba1, #abc7e3); */
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0vw;
+  width: 100vw;
+  height: 50vh;
+  background: url("../images/wave.webp") no-repeat;
+  background-size: 100%;
+  color: #fff;
+}
+
+.home {
+  font-family: "Staatliches";
+  position: relative;
+  padding: 30px 0 0 30px;
+  width: 170px;
+  height: 70px;
+  color: #fff;
+  font-size: 20px;
+  animation: slide-back 0.5s ease-out forwards;
+}
+
+.home:hover {
+  animation: slide 0.5s ease-out forwards;
+}
+
+.home .my-name {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.wrapper {
+  animation: slide-up 1s ease-out forwards;
+}
+
+h1 {
+  position: relative;
+  top: 5vh;
+  text-align: center;
+  font-family: "Staatliches";
+  font-size: 4vw;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  top: 10vh;
+  text-align: center;
+  z-index: 999;
+}
+
+.inputs {
+  margin-right: 3vh;
+}
+input {
+  margin: 2vh 0;
+  padding: 1vw;
+  height: 3.5vw;
+  text-align: center;
+  font-size: 2vw;
+  background: none;
+  color: #fff;
+  outline: none;
+  border: 2px solid #3498db;
+  border-radius: 2vw;
+}
+
+textarea {
+  background: none;
+  outline: none;
+  padding: 1vw;
+  border-radius: 2vw;
+  color: #fff;
+  font-size: 1.5vw;
+  resize: none;
+  border: 2px solid #3498db;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(18, 179, 18);
+}

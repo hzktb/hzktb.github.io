@@ -30,7 +30,7 @@ a {
   position: relative;
   width: 100vw;
   height: 150vh;
-  background-color: rgba(131, 125, 125, 0.8);
+  background: linear-gradient(to right bottom, #366ba1, #abc7e3);
   background-attachment: fixed;
 }
 
@@ -56,14 +56,18 @@ a {
 }
 
 .item {
+  display: block;
   position: relative;
   left: 10vw;
   top: 25vh;
   margin: 20px;
   margin-bottom: 50px;
   width: 20vw;
+  font-size: 2.5vw;
+  font-family: "Staatliches";
+  text-align: center;
+  line-height: 7vh;
   animation: slide-back 0.5s ease-out forwards;
-  background-color: #fff;
 }
 
 .item a {
@@ -76,11 +80,16 @@ a {
 }
 
 .display {
-  position: absolute;
+  position: fixed;
   left: 50vw;
-  top: 50vh;
+  top: 40vh;
   margin-top: -10vw;
   width: 30vw;
   height: 30vw;
-  background-color: #fff;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.25)
+  );
+  border-radius: 16px;
 }
