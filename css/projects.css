@@ -80,11 +80,14 @@ a {
 }
 
 .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   left: 50vw;
   top: 40vh;
   margin-top: -10vw;
-  width: 30vw;
+  width: 45vw;
   height: 30vw;
   background: linear-gradient(
     to right bottom,
@@ -92,4 +95,10 @@ a {
     rgba(255, 255, 255, 0.25)
   );
   border-radius: 16px;
+}
+
+img {
+  width: 42vw;
+  height: 54vh;
+  border-radius: 9px;
 }

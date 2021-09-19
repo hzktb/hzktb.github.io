@@ -4,8 +4,11 @@
 }
 
 a {
-  color: rgb(196, 192, 192);
-  text-decoration: none;
+  color: rgb(196, 192, 192) !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #fff !important;
 }
 @keyframes slide {
   0% {
@@ -68,16 +71,4 @@ body div {
 }
 .contact:hover {
   animation: slide 0.5s ease-out forwards;
-}
-
-#about:hover {
-  color: #fff;
-}
-
-#projects:hover {
-  color: #fff;
-}
-
-#contact:hover {
-  color: #fff;
 }

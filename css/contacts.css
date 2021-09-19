@@ -46,7 +46,7 @@ a {
 
 .wave {
   position: absolute;
-  bottom: 0vw;
+  bottom: -3vw;
   width: 100vw;
   height: 50vh;
   background: url("../images/wave.webp") no-repeat;
@@ -126,5 +126,21 @@ textarea {
 }
 input:focus,
 textarea:focus {
+  border: 2px solid rgb(18, 179, 18);
+}
+
+.submit {
+  padding: 0.5vw 1vw;
+  background: none;
+  border: 2px solid #3498db;
+  border-radius: 2vw;
+  color: #3498db;
+  font-size: 1.5vw;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.submit:hover {
+  color: rgb(18, 179, 18);
   border: 2px solid rgb(18, 179, 18);
 }

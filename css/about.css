@@ -5,8 +5,8 @@
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 @keyframes slide {
@@ -96,9 +96,8 @@ a {
   margin-bottom: 200px;
   padding: 3vw;
   width: 50vw;
-  height: 100vh;
   font-size: 40px;
-  color: #fff;
+  color: #fff !important;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
