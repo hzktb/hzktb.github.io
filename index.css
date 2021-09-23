@@ -12,22 +12,22 @@ a:hover {
 }
 @keyframes slide {
   0% {
-    left: 950px;
+    left: 50%;
     font-size: 80px;
   }
   100% {
-    left: 980px;
+    left: 51%;
     font-size: 95px;
   }
 }
 
 @keyframes slide-back {
   0% {
-    left: 980px;
+    left: 51%;
     font-size: 95px;
   }
   100% {
-    left: 950px;
+    left: 50%;
     font-size: 80px;
   }
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .wrapper {
-  position: static;
+  position: relative;
   margin: 0;
   width: 100vw;
   height: 101vh;
@@ -49,17 +49,25 @@ body {
     rgba(0, 0, 0, 0.8) 98%
   );
 }
-body div {
+.wrapper div {
   font-family: "Staatliches";
-  position: relative;
+  position: absolute;
   top: 35vh;
   margin: -8px;
   width: 600px;
   height: 100px;
-  font-size: 80px;
+  font-size: 5vw !important;
   color: rgb(196, 192, 192);
   font-weight: 800;
   animation: slide-back 0.5s ease-out forwards;
+}
+
+.projects {
+  top: 45vh !important;
+}
+
+.contact {
+  top: 55vh !important;
 }
 
 .about:hover {

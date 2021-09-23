@@ -84,10 +84,10 @@ a {
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 50vw;
+  left: 40vw;
   top: 40vh;
   margin-top: -10vw;
-  width: 45vw;
+  width: 50vw;
   height: 30vw;
   background: linear-gradient(
     to right bottom,
@@ -98,7 +98,7 @@ a {
 }
 
 img {
-  width: 42vw;
-  height: 54vh;
+  width: 93%;
+  height: 90%;
   border-radius: 9px;
 }
